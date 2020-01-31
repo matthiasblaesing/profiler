@@ -150,6 +150,8 @@ public class CpuProfile {
         idleClassAndMethod.add(new StringPair("java.net.PlainSocketImpl", "socketAvailable"));
         idleClassAndMethod.add(new StringPair("java.net.PlainSocketImpl", "socketAccept"));
         idleClassAndMethod.add(new StringPair("sun.nio.ch.ServerSocketChannelImpl", "accept0"));
+        idleClassAndMethod.add(new StringPair("sun.nio.ch.WindowsSelectorImpl$SubSelector", "poll0"));
+        idleClassAndMethod.add(new StringPair("java.net.TwoStacksPlainSocketImpl", "socketAccept"));
     }
 
     /**
